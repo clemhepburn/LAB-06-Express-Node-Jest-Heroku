@@ -70,3 +70,15 @@ test('GET /data/berries', async () => {
   expect(response.body).toEqual(expected);
 
 });
+
+test('GET /data/berries/1', async () => {
+  const response = await request.get('/data/berries/1');
+  const expected = {
+    name: 'lamp',
+    type: 'furniture',
+    color: 'brown'
+  };
+
+  expect(response.status).toBe(200);
+  expect(response.body).toEqual(expected);
+});
