@@ -1,0 +1,25 @@
+{
+  "name": "LAB-06-Express-Node-Jest-Heroku",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clemhepburn/LAB-06-Express-Node-Jest-Heroku.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clemhepburn/LAB-06-Express-Node-Jest-Heroku/issues"
+  },
+  "homepage": "https://github.com/clemhepburn/LAB-06-Express-Node-Jest-Heroku#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}
