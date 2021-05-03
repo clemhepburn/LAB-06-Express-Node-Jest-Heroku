@@ -5,7 +5,7 @@ const request = supertest(app);
 // If a GET reqest is made to /api/cats
 // does the server respond with status of 200
 // and body matching the cats data?
-test('GET /data/berries', async () => {
+test('GET /api/berries', async () => {
   const expected = [
     {
       name: 'lamp',
@@ -64,15 +64,15 @@ test('GET /data/berries', async () => {
     }
   ];
 
-  const response = await request.get('/data/berries');
+  const response = await request.get('/api/berries');
 
   expect(response.status).toBe(200); // 200 = OK
   expect(response.body).toEqual(expected);
 
 });
 
-test('GET /data/berries/1', async () => {
-  const response = await request.get('/data/berries/1');
+test('GET /api/berries/1', async () => {
+  const response = await request.get('/api/berries/1');
   const expected = {
     name: 'lamp',
     type: 'furniture',
